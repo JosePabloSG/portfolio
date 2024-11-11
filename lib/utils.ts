@@ -1,0 +1,22 @@
+import { twMerge } from 'tailwind-merge';
+import { clsx, ClassValue } from 'clsx';
+
+export function cn(...inputs: ClassValue[]) {
+    return twMerge(clsx(inputs));
+}
+
+export function toKebabCase(string: string): string {
+    return string
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-+)|(-+$)/g, '');
+}
+
+export function formatDate(date: string): string {
+    return new Date(date).toLocaleDateString('es', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+    });
+}
