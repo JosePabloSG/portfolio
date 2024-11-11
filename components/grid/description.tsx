@@ -16,10 +16,12 @@ export default function Description() {
                 />
             </div>
             <p className='text-balance leading-relaxed'>
-                Hola soy, <span className='font-calistoga text-xl'>José Pablo</span>
-                , un desarrollador de software de Costa Rica. Mi meta es ser desarrollador frontend.{' '}
+                Hola, soy{' '}
+                <span className='font-calistoga text-xl'>José Pablo</span>, un
+                estudiante de desarrollo web que vive en Costa Rica. Mi meta es
+                ser desarrollador frontend.{' '}
                 <span className='hidden md:inline'>
-                    Me encanta nextjs, tailwindcss, typescript, y astro.
+                    Me encantan Next.js, Tailwind CSS, TypeScript y Astro.
                 </span>
             </p>
         </Card>
