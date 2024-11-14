@@ -4,7 +4,7 @@ import Anchor from '../ui/anchor';
 import Card from '../ui/card';
 import { useTheme } from 'next-themes';
 
-export default function GithubCard() {
+export default function Github() {
     const { theme } = useTheme();
     return (
         <Card className='relative flex h-full flex-col items-center justify-center bg-white dark:bg-dark-900'>
